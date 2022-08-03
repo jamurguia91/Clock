@@ -145,6 +145,7 @@ width: 2px;
     text-align: center;
     font-weight: 500;
     color: var(--clr);
+    font-family: Nunito;
 }
 #time div:nth-child(1)::after,
 #time div:nth-child(2)::after {
@@ -158,6 +159,7 @@ width: 2px;
     justify-content: center;
     align-items: center;
     color: aqua;
+    font-family: Nunito;
 }
 #time div:nth-child(2)::after {
     animation: animate 1s steps(1) infinite;
@@ -172,12 +174,3 @@ width: 2px;
         opacity: 0;
     }
 }
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;
-}
-
-/* 
-stopped video at 14:10 TM */
