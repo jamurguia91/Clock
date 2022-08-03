@@ -1,9 +1,80 @@
 /* My custom style */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500&display=swap');
 
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     background-color: #1e1e1e;
 }
 
-h1 {
-    color: maroon;
+.container {
+position: relative;
+background: #1e1e1e;
+/* min-height: 500px; */
+border-radius: 20px;
+border-top-left-radius: 225px;
+border-top-right-radius: 225px;
+box-shadow: 25px 25px 75px rgba(0,0,0,0.75),
+10px 10px 70px rgba(0,0,0,0.25),
+inset 5px 5px 10px rgba(0,0,0,0.5),
+inset 5px 5px 20px rgba(0,0,0,0.2),
+inset -5px -5px 10px rgba(0,0,0,0.75);
+display: flex;
+justify-content: center;
+align-items: center;
 }
+
+.clock {
+    position: relative;
+    width: 450px;
+    height: 450px;
+    background: #1e1e1e;
+    border-radius: 50%;
+    box-shadow: 10px 50px 70px rgba(0,0,0,0.25),
+    inset 5px 5px 10px rgba(0,0,0,0.5),
+    inset 5px 5px 20px rgba(0,0,0,0.2),
+    inset -5px -5px 10px rgba(0,0,0,0.75);
+    display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 50px;
+}
+
+.clock::before {
+   content: '';
+   position: absolute;
+   width: 8px;
+   height: 8px;
+   background: #1e1e1e;
+   border: 3px solid #ffffff;
+   border-radius: 50%;
+}
+
+.clock span {
+    position: absolute;
+    inset: 20px;
+    color: white;
+    text-align: center;
+    transform: rotate(calc(30deg * var(--i)));
+    /* 360/12 = 30deg */
+}
+
+.clock span b {
+    font-size: 2.25em;
+    opacity: 0.20;
+    font-weight: 400;
+    font-family: Nunito;
+    display: inline-block;
+    transform: rotate(calc(-30deg * var(--i)));
+}
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* 
+stopped video at 7:20 TM */
